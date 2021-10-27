@@ -1,0 +1,87 @@
+*****git initialize*****
+git status -->to check status or modified
+git init --> to create git repository
+git add --a  ---> to add file in git repository or in staged state
+git add filename.ext
+git commit -m "reason of change to track"  --->to commit change
+
+****git status*****
+git status  -->to check status
+git log  ---> to check track
+
+
+****git to config******
+git config --global user.name "Rohit"
+git config --global user.email "Rohit@gmail.com"
+
+
+******delete git repository .git file*****
+rm -rf .git
+
+******clone from github/copy*****
+git clone https://web adress filename
+
+
+****.gitignore:to ignore some tracking file in git repository***
+touch .gitignore ---> to create .gitignore file
+1.add file name in .gitignore
+2.*.log  -->to ignore all log file
+3./dir/ --> to ignore outward folder
+4.dir/  --> to ignore all sub folder 
+
+
+*****compare*****
+git diff --> to compare between staging area and working directory
+git diff --staged   --> to compare between staging area committed
+
+
+***commit***
+git commit -a -m "direct commit"  --->skipping the staging area
+
+
+
+****move or rename*******
+git rm filename ---> to remove file
+git mv filename newfilename --> to rename file
+git rm --cached filename  --> to untrack file from git repository
+
+
+*****log*****
+q --->press q to quit
+git log --> to see commit
+git log -p --->to changed part and press q quit
+git log -p -2 --->to 2 changed part and press q quit
+git log --stat ---> to see change in short format
+git log --pretty=oneline ---> to see one line commit
+git log --pretty=short ---> to see short commit /full
+git log --since=2.months  ---> to see all commit two months
+C:\Users\Rohit sah\Documents\Git - git-log Documentation
+
+****to change commit msg****
+1.git commit --ammend
+2.press i and edit
+3.esc
+4.shift+:
+5.w
+6.q
+7.enter
+
+****restore*****
+git restore --staged filename ----> to unstaged
+git checkout -f  ---> to restore all file to previous version only for unstaged file
+git checkout -- filename --> to restore to previous version
+
+
+***to create remote to push in github***
+1.git remote add origin https://github.com/Rohit7644/Calculator.git  ---> to create remote name=origin
+2.git remote -v  ---> to check remote url/name
+3.git branch -M main
+4. git push -u origin main
+
+
+*****to create ssh key****
+1.ssh-keygen -t ed25519 -C "rs28102058@gmail.com"
+2.eval "$(ssh-agent -s)"
+3.ssh-add ~/.ssh/id_ed25519
+4.~/.ssh/id_ed25519.pub
+5.tail ~/.ssh/id_ed25519.pub ----> copy the generated data and paste in ssh section in github
