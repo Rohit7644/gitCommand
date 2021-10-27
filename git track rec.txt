@@ -1,3 +1,8 @@
+****git to config******
+git config --global user.name "Rohit"
+git config --global user.email "Rohit@gmail.com"
+git config --list
+
 *****git initialize*****
 git status -->to check status or modified
 git init --> to create git repository
@@ -8,11 +13,6 @@ git commit -m "reason of change to track"  --->to commit change
 ****git status*****
 git status  -->to check status
 git log  ---> to check track
-
-
-****git to config******
-git config --global user.name "Rohit"
-git config --global user.email "Rohit@gmail.com"
 
 
 ******delete git repository .git file*****
