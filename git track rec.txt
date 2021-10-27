@@ -77,8 +77,7 @@ git checkout -- filename --> to restore to previous version
 2.git remote -v  ---> to check remote url/name
 3.git branch -M main
 4.git push -u origin main
-
-or--> git push -u origin master
+ or--> git push -u origin master
 
 
 *****to create ssh key****
@@ -95,5 +94,21 @@ git config --global alias.last 'log -p -1'   --->last commit
 
 
 ****branches*****
-git checkout -b branchname  --->to create new branch
-git checkout branchname  --> to jump into other branch
+git checkout -b branchName  --->to create new branch
+git checkout branchName  --> to jump into other branch !clean state before switching
+git branch     -----------> to see branch
+git branch -v  ---------->to see branch last commit
+
+
+*****merging branch*******
+git merge temp_branchName  --->you have to be in main/master branch before merging
+git branch --merged        ----> to see merged branch
+git branch --no-merged     ----> to see not merged branch
+
+*******deleting branches******
+git branch -d branchName  ---> for temproary deletion
+git branch -D branchName --> for permanent deletion
+
+*****push branch remote*******
+git remote -v   ----> to see remote name
+git push remotename branchName ---->to push branch
