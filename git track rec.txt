@@ -87,3 +87,13 @@ or--> git push -u origin master
 3.ssh-add ~/.ssh/id_ed25519
 4.~/.ssh/id_ed25519.pub
 5.tail ~/.ssh/id_ed25519.pub ----> copy the generated data and paste in ssh section in github
+
+****alias****
+git config --global alias.st status--->for st stands for status
+git config --global alias.unstage 'restore --staged --'    (for shortcut)
+git config --global alias.last 'log -p -1'   --->last commit
+
+
+****branches*****
+git checkout -b branchname  --->to create new branch
+git checkout branchname  --> to jump into other branch
