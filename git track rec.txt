@@ -76,7 +76,9 @@ git checkout -- filename --> to restore to previous version
 1.git remote add origin https://github.com/Rohit7644/Calculator.git  ---> to create remote name=origin
 2.git remote -v  ---> to check remote url/name
 3.git branch -M main
-4. git push -u origin main
+4.git push -u origin main
+
+or--> git push -u origin master
 
 
 *****to create ssh key****
